@@ -69,11 +69,6 @@ def isHODLoggedIN():
     return False
 
 
-@app.route('/')
-def home():
-    return redirect(url_for('/login'))
-
-
 @app.route('/login')
 def login():
     google = oauth.create_client('google')  # create the google oauth client
