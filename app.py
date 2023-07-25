@@ -71,7 +71,7 @@ def isHODLoggedIN():
 
 @app.route('/')
 def home():
-    return redirect(url_for('/'))
+    return redirect(url_for('/login'))
 
 
 @app.route('/login')
