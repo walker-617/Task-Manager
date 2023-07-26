@@ -14,7 +14,7 @@ from datetime import datetime
 import gridfs
 
 client = pymongo.MongoClient(
-    "mongodb+srv://walker:walker@hod-portal.hpemmk8.mongodb.net/test")
+    "Your mongodb link here")
 db = client["HOD-Portal"]
 
 fs = gridfs.GridFS(db)
@@ -27,8 +27,8 @@ global client_secret
 HOD_Email = "manjusha@nitc.ac.in"
 HOD_Password = "manjusha_617"
 
-client_id = "739149293927-5oj10b2rjhlhc81moe0ni9qa074hv8t1.apps.googleusercontent.com"
-client_secret = "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"
+client_id = "client id here"
+client_secret = "client secret here"
 
 # Session config
 app.secret_key = "walker"
